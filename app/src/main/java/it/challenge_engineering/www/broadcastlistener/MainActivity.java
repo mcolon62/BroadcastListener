@@ -62,7 +62,7 @@ public class MainActivity extends Activity
 {
 
     // private UDPListenerService mUDPListenerService = null;
-    private String appNameVersion = "UDB Broadcast Listener - v. 4.04.05 - 14/3/2020";
+    private String appNameVersion = "UDB Broadcast Listener - v. 4.04.25 - 14/3/2020";
     private ServerConnection sConn = null;
     private TextView tdata = null;
     private Intent service = null;
