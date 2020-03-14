@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Monitor ospiti</string>
+    <string name="action_settings">Settings</string>
+    <string name="empty_name"></string>
+    <string name="empty_so2"></string>
+    <string name="empty_fc"></string>
+</resources>

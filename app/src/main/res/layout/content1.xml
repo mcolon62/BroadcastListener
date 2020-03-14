@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/page1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="it.challenge_engineering.www.broadcastlistener.MainActivity"
+    android:background="#DDDDDD"
+    android:layout_marginTop="62dp"
+    android:visibility="visible"
+    tools:showIn="@layout/activity_main"
+    tools:layout_editor_absoluteY="80dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Ospiti gestiti: "
+        android:textSize="16dp"
+        app:layout_constraintRight_toLeftOf="@+id/totOspitiGestiti"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/totOspitiGestiti"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/totOspitiGestiti"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:textStyle="bold"
+        android:text="0"
+        android:textSize="40dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="180dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="170dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ospiti NON collegati: "
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/totOspitiNonCollegati"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintRight_toRightOf="@+id/label1" />
+
+    <TextView
+        android:id="@+id/totOspitiNonCollegati"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:textStyle="bold"
+        android:text="0"
+        android:textSize="40dp"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/totOspitiGestiti"
+        app:layout_constraintLeft_toRightOf="@+id/label2"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/label3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ospiti In ALLARME: "
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/totOspitiInAllarme"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintRight_toRightOf="@+id/label1" />
+
+    <TextView
+        android:id="@+id/totOspitiInAllarme"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:textStyle="bold"
+        android:text="0"
+        android:textSize="40dp"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/totOspitiNonCollegati"
+        app:layout_constraintLeft_toRightOf="@+id/label2"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/label4"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Ricezione dati: "
+        android:textSize="16dp"
+        app:layout_constraintRight_toRightOf="@+id/label1"
+        app:layout_constraintTop_toBottomOf="@+id/totOspitiInAllarme" />
+
+    <ImageButton
+        android:id="@+id/LedReceiving1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3px"
+        app:layout_constraintTop_toBottomOf="@+id/totOspitiInAllarme"
+        app:layout_constraintLeft_toRightOf="@+id/label4"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_led_red" />
+
+    <TextView
+        android:id="@+id/label5"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="14dp"
+        android:text="Connessione WIFI: "
+        android:textSize="16dp"
+        app:layout_constraintRight_toRightOf="@+id/label1"
+        app:layout_constraintTop_toBottomOf="@+id/LedReceiving1" />
+
+    <ImageButton
+        android:id="@+id/LedWIFI1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3px"
+        app:layout_constraintTop_toBottomOf="@+id/LedReceiving1"
+        app:layout_constraintLeft_toRightOf="@+id/label4"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="4dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_led_red" />
+
+    <TextView
+        android:id="@+id/labelIPAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indirizzo IP: "
+        android:textSize="16dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/label5"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintRight_toRightOf="@+id/label1" />
+
+    <TextView
+        android:id="@+id/ipAddressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#0000FF"
+        android:layout_marginLeft="4dp"
+        android:padding="4dp"
+        android:text="0.0.0.0"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/label2"
+        app:layout_constraintTop_toBottomOf="@+id/LedWIFI1" />
+
+    <TextView
+        android:id="@+id/labelIPAddressServer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indirizzo IP server: "
+        android:textSize="16dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/labelIPAddress"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintRight_toRightOf="@+id/label1" />
+
+    <TextView
+        android:id="@+id/ipAddressLabelServer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="#0000FF"
+        android:layout_marginLeft="4dp"
+        android:padding="4dp"
+        android:text="0.0.0.0"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/label2"
+        app:layout_constraintTop_toBottomOf="@+id/ipAddressLabel" />
+
+    <Button
+        android:id="@+id/startLoggingButton"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start logging"
+        app:layout_constraintLeft_toLeftOf="@+id/labelIPAddressServer"
+        app:layout_constraintTop_toBottomOf="@+id/ipAddressLabelServer" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/password_dialog"
+    android:orientation="vertical"
+    android:background="#EEEEEE"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content">
+
+    <!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Attivazione log"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text=" Inserire la password:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:textSize="24dp"
+            android:inputType="textPassword"
+            android:background="#FFFFFF"/>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:background="#EEEEEE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/pwdOkButton"
+                android:textSize="30dp"
+                android:text="OK"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/pwdCancelButton"
+                android:textSize="30dp"
+                android:text="Cancel"
+                android:layout_marginLeft="110dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    -->
+
+</LinearLayout>

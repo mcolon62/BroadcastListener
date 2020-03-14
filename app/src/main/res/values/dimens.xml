@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="maingrid_row_height">38dp</dimen>
+    <dimen name="maingrid_button_width">90dp</dimen>
+    <dimen name="maingrid_colvalue_width">45dp</dimen>
+    <dimen name="maingrid_colnome_width">170dp</dimen>
+    <dimen name="maingrid_text_size">18dp</dimen>
+    <dimen name="maingrid_text_size_button">14dp</dimen>
+</resources>
